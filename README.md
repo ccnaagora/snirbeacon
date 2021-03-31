@@ -3,16 +3,22 @@ scan de beacon :
 
 PENSER A VALIDER LES AUTORISATIONS DANS LES PARAMETRES DE L'APPLICATION
 
+
 Les beacon envoient entre autre à intervalles réguliers 3 data:
 UUID
 MAJOR
 MINOR
+
+
 Ils retransmettent aussi le puissance étalonnée à 1m en dbm
 Il existe cependant des différences selon les fabricants de beacon.
+
 
 format de la trame à checker: dépend des fabricants
 m:2-3=beac,i:4-19,i:20-21,i:22-23,p:24-24,d:25-25
 Signification
+
+
 m - matching byte sequence for this beacon type to parse (exactly one required)
 s - UUID du type de beacon à capturer (optional, only for Gatt-based beacons)
 i - identifiant : de 1 à 3
