@@ -18,7 +18,8 @@ s - UUID du type de beacon à capturer (optional, only for Gatt-based beacons)
 i - identifiant : de 1 à 3
 p - champ de calibration de puissance (nécessaire)
 d - champ de données (optional, multiple allowed)
-x - extra layout. Signifies that the layout is secondary to a primary layout with the same matching byte sequence (or ServiceUuid). Extra layouts do not require power or identifier fields and create Beacon objects without identifiers.
+x - extra layout. Signifies that the layout is secondary to a primary layout with the same matching byte sequence (or ServiceUuid). 
+<br>
 Example du parser pour AltBeacon:
 "m:2-3=beac,i:4-19,i:20-21,i:22-23,p:24-24,d:25-25"
 => Décodé si :
